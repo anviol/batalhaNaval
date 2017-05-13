@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
  * File:   cliente.c
  * Author: André
@@ -11,14 +5,27 @@
  * Created on 12 de Maio de 2017, 20:48
  */
 
+//Bibliotecas
 #include <stdio.h>
-#include <stdlib.h>
+#include <sys/socket.h>
+#include <netdb.h>
+#include <string.h>
+#include "biblioteca.h"
+
+//Definições globais
+#define LEN 4096
 
 /*
  * 
  */
 int main(int argc, char** argv) {
-
-    return (EXIT_SUCCESS);
+    
+//Declaração de variáveis
+    struct addrinfo auxiliar, *socketInfo;
+    struct sockaddr_in6 servidor; 
+    int tamanhoServidor, meuSocket, conectado = 1, numeroMensagem = 0, slen = 0, i = 0;
+    char envia[556];
+    char recebe[556];
+    char buffer[LEN];
 }
 

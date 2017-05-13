@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/biblioteca.o \
 	${OBJECTDIR}/cliente.o \
 	${OBJECTDIR}/servidor.o
 
@@ -62,6 +63,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/batalhanaval.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/batalhanaval ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/biblioteca.o: biblioteca.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/biblioteca.o biblioteca.c
 
 ${OBJECTDIR}/cliente.o: cliente.c
 	${MKDIR} -p ${OBJECTDIR}

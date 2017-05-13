@@ -4,10 +4,12 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Arquivos de Cabeçalho"
                    projectFiles="true">
+      <itemPath>biblioteca.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Arquivos de Código-Fonte"
                    projectFiles="true">
+      <itemPath>biblioteca.c</itemPath>
       <itemPath>cliente.c</itemPath>
       <itemPath>servidor.c</itemPath>
     </logicalFolder>
@@ -37,6 +39,10 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="biblioteca.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="biblioteca.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="cliente.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="servidor.c" ex="false" tool="0" flavor2="0">
@@ -62,6 +68,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="biblioteca.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="biblioteca.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="cliente.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="servidor.c" ex="false" tool="0" flavor2="0">
