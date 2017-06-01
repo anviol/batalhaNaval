@@ -15,7 +15,6 @@ servidor.o: servidor.c
 biblioteca.o: biblioteca.c
 	gcc -o biblioteca.o -c biblioteca.c
 
-
 clean:
 	rm cliente
 	rm cliente.o
